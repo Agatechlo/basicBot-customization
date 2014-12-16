@@ -838,12 +838,12 @@
             var alreadyPlayed = false;
             for (var i = 0; i < basicBot.room.historyList.length; i++) {
                 if (basicBot.room.historyList[i][0] === obj.media.cid) {
-                    var firstPlayed = basicBot.room.historyList[i][1];
-                    var plays = basicBot.room.historyList[i].length - 1;
-                    var lastPlayed = basicBot.room.historyList[i][plays];
-                    API.sendChat(subChat(basicBot.chat.songknown, {plays: plays, timetotal: basicBot.roomUtilities.msToStr(Date.now() - firstPlayed), lasttime: basicBot.roomUtilities.msToStr(Date.now() - lastPlayed)}));
-                    basicBot.room.historyList[i].push(+new Date());
-                    alreadyPlayed = true;
+                //    var firstPlayed = basicBot.room.historyList[i][1];
+                //    var plays = basicBot.room.historyList[i].length - 1;
+                //    var lastPlayed = basicBot.room.historyList[i][plays];
+                  //  API.sendChat(subChat(basicBot.chat.songknown, {plays: plays, timetotal: basicBot.roomUtilities.msToStr(Date.now() - firstPlayed), lasttime: basicBot.roomUtilities.msToStr(Date.now() - lastPlayed)}));
+                  //  basicBot.room.historyList[i].push(+new Date());
+                  //  alreadyPlayed = true;
                 }
             }
             if (!alreadyPlayed) {
