@@ -1002,7 +1002,7 @@
                 if (ch >= 'A' && ch <= 'Z') capitals++;
             }
             if (capitals >= 40) {
-                API.sendChat(subChat(basicBot.chat.caps, {"No spam or profanity in chat"}));
+                API.sendChat(subChat(basicBot.chat.caps, {name: chat.un}));
                 return true;
             }
             msg = msg.toLowerCase();
