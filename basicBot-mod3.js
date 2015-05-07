@@ -983,7 +983,7 @@
         },
         chatcleaner: function (chat) {
             if (!basicBot.settings.filterChat) return false;
-            if (basicBot.userUtilities.getPermission(chat.uid) > 1) return false;
+            if (basicBot.userUtilities.getPermission(chat.uid) > 0) return false;
             var msg = chat.message;
             var containsLetters = false;
             for (var i = 0; i < msg.length; i++) {
@@ -1755,7 +1755,10 @@
                     'gives you a sugar cookie. What, no frosting and sprinkles? 0/10 would not touch.',
                     'gives you a chocolate chip cookie. Oh wait, those are raisins. Bleck!',
                     'gives you an enormous cookie. Poking it gives you more cookies. Weird.',
+                    'gives you Kaito\'s ice cream.  Wait that\'s not a cookie!',
+                    'gives you a leek  This is the Vocaloid Hangout, after all. XD',
                     'gives you a fortune cookie. It reads "Why aren\'t you working on any projects?"',
+                    'gives you a fortune cookie. It reads "Make more covers using LEON!"',
                     'gives you a fortune cookie. It reads "Give that special someone a compliment"',
                     'gives you a fortune cookie. It reads "Take a risk!"',
                     'gives you a fortune cookie. It reads "Go outside."',
