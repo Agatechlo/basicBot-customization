@@ -1012,7 +1012,7 @@
             }
             for (var j = 0; j < basicBot.chatUtilities.spam.length; j++) {
                 if (msg === basicBot.chatUtilities.spam[j]) {
-                    API.sendChat(subChat(basicBot.chat.spam, "Spam or profanity not allowed"));
+                    API.sendChat(subChat("spamming or profanity is not allowed here.", {name: chat.un}));
                     return true;
                 }
             }
