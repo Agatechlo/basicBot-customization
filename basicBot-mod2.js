@@ -983,7 +983,7 @@
         },
         chatcleaner: function (chat) {
             if (!basicBot.settings.filterChat) return false;
-            if (basicBot.userUtilities.getPermission(chat.uid) > 1) return false;
+            if (basicBot.userUtilities.getPermission(chat.uid) > 0) return false;
             var msg = chat.message;
             var containsLetters = false;
             for (var i = 0; i < msg.length; i++) {
@@ -1012,7 +1012,7 @@
             }
             for (var j = 0; j < basicBot.chatUtilities.spam.length; j++) {
                 if (msg === basicBot.chatUtilities.spam[j]) {
-                    API.sendChat(subChat(basicBot.chat.spam, {name: chat.un}));
+                    API.sendChat(subChat(basicBot.chat.spam, "No spam or profanity in chat"));
                     return true;
                 }
             }
@@ -1155,7 +1155,9 @@
                 'hueh', 'hu3', 'brbr', 'heu', 'brbr', 'kkkk', 'spoder', 'mafia', 'zuera', 'zueira',
                 'zueria', 'aehoo', 'aheu', 'alguem', 'algum', 'brazil', 'zoeira', 'fuckadmins', 'affff', 'vaisefoder', 'huenaarea',
                 'hitler', 'ashua', 'ahsu', 'ashau', 'lulz', 'huehue', 'hue', 'huehuehue', 'merda', 'pqp', 'puta', 'mulher', 'pula', 'retarda', 'caralho', 'filha', 'ppk',
-                'gringo', 'fuder', 'foder', 'hua', 'ahue', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 'foda'
+                'gringo', 'fuder', 'foder', 'hua', 'ahue', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 'foda',
+                'fuck', 'feck', 'fick', 'fuq', 'fuc', 'fuk', 'dufuq', 'dafuq', 'dafuck', 'dufuck', 'dafuk', 'dufuk', 'shit', 'shet', 'shitty',
+                'zibby'
             ],
             curses: [
                 'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafocka'
@@ -1754,16 +1756,19 @@
                     'gives you a sugar cookie. What, no frosting and sprinkles? 0/10 would not touch.',
                     'gives you a chocolate chip cookie. Oh wait, those are raisins. Bleck!',
                     'gives you an enormous cookie. Poking it gives you more cookies. Weird.',
+                    'gives you Kaito\'s ice cream.  Hey wait that\'s not a cookie!!',
+                    'gives you a leek.  This is the Vocaloid Hangout, after all. XD'
                     'gives you a fortune cookie. It reads "Why aren\'t you working on any projects?"',
                     'gives you a fortune cookie. It reads "Give that special someone a compliment"',
                     'gives you a fortune cookie. It reads "Take a risk!"',
+                    'gives you a fortune cookie. It reads "Make more covers using LEON"',
                     'gives you a fortune cookie. It reads "Go outside."',
                     'gives you a fortune cookie. It reads "Don\'t forget to eat your veggies!"',
                     'gives you a fortune cookie. It reads "Do you even lift?"',
                     'gives you a fortune cookie. It reads "m808 pls"',
                     'gives you a fortune cookie. It reads "If you move your hips, you\'ll get all the ladies."',
                     'gives you a fortune cookie. It reads "I love you."',
-                    'gives you a Golden Cookie. You can\'t eat it because it is made of gold. Dammit.',
+                    'gives you a Golden Cookie. You can\'t eat it because it is made of gold. Dangit.',
                     'gives you an Oreo cookie with a glass of milk!',
                     'gives you a rainbow cookie made with love :heart:',
                     'gives you an old cookie that was left out in the rain, it\'s moldy.',
