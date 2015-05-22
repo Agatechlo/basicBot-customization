@@ -89,7 +89,7 @@
         etaRestriction: false,
         welcome: true,
         opLink: null,
-        rulesLink: "http://preview.tinyurl.com/VocaHangoutRules",
+        rulesLink: "https://goo.gl/FYSWsE",
         themeLink: null,
         fbLink: "https://www.facebook.com/vocaloidfanpage",
         youtubeLink: null,
