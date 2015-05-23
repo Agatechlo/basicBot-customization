@@ -55,6 +55,9 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "VocaloidHangoutBot",
         language: "english",
+        startupCap: 1, // 1-200
+        startupVolume: 0, //0-100
+        startupEmoji: true, // true or false
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         maximumAfk: 120,
         afkRemoval: false,
@@ -65,6 +68,8 @@
         maximumLocktime: 10,
         cycleGuard: false,
         maximumCycletime: 10,
+        voteSkip: true,
+        voteSkipLimit: 3,
         timeGuard: true,
         maximumSongLength: 9,
         autodisable: false,
