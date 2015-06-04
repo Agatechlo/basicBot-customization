@@ -1011,7 +1011,9 @@
                 return true;
             }
             for (var j = 0; j < basicBot.chatUtilities.spam.length; j++) {
-                if (msg === basicBot.chatUtilities.spam[j]) {
+          //      if (msg === basicBot.chatUtilities.spam[j]) {
+                  var spos = msg.search(basicBot.chatUtilities.spam[j]);
+                  if (spos != -1) {
                     API.sendChat(subChat("\/me @%%NAME%%, spamming or profanity is not allowed here.", {name: chat.un}));
                     return true;
                 }
@@ -1152,11 +1154,12 @@
                 basicBot.room.roomstats.chatmessages++;
             },
             spam: [
-                'hueh', 'hu3', 'brbr', 'heu', 'brbr', 'kkkk', 'spoder', 'mafia', 'zuera', 'zueira',
-                'zueria', 'aehoo', 'aheu', 'alguem', 'algum', 'brazil', 'zoeira', 'fuckadmins', 'affff', 'vaisefoder', 'huenaarea',
-                'hitler', 'ashua', 'ahsu', 'ashau', 'lulz', 'huehue', 'hue', 'huehuehue', 'merda', 'pqp', 'puta', 'mulher', 'pula', 'retarda', 'caralho', 'filha', 'ppk',
-                'gringo', 'fuder', 'foder', 'hua', 'ahue', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 'foda',
-                'fuck', 'fuk', 'fuq', 'dafuq', 'dufuq', 'feck', 'fick', 'fahk', 'fak', 'shit', 'shet', 'shitty', 'zibby'
+                'hueh', 'hu3', 'kkkk', 'spoder', 'mafia', 'zuera', 'zueira',
+                'zueria', 'aehoo', 'alguem', 'zoeira', 'fuckadmins', 'vaisefoder', 'huenaarea',
+                'hitler', 'huehue', 'huehuehue', 'merda', 'puta', 'mulher', 'retarda', 'caralho', 'filha', 
+                'gringo', 'fuder', 'foder', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 
+                'fuck', ' fuk', 'fuk ', 'fuq', 'dafuq', 'dufuq', 'feck', 'fick', 'fahk', ' fak', ' fak', 
+                'shit', 'shet ', ' shet', 'shitty', 'zibby'
             ],
             curses: [
                 'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafocka'
