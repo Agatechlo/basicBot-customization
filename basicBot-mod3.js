@@ -1158,7 +1158,7 @@
                 'zueria', 'aehoo', 'alguem', 'zoeira', 'fuckadmins', 'vaisefoder', 'huenaarea',
                 'hitler', 'huehue', 'huehuehue', 'merda', 'puta', 'mulher', 'retarda', 'caralho', 'filha', 
                 'gringo', 'fuder', 'foder', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 
-                'fuck', ' fuk', 'fuk ', 'fuq', 'dafuq', 'dufuq', 'feck', 'fick', 'fahk', ' fak', ' fak', 
+                'fuck', '\u0020fuk', 'fuk\u0020', 'fuq', 'dafuq', 'dufuq', 'feck', 'fick', 'fahk', ' fak', ' fak', 
                 'shit', 'shet ', ' shet', 'shitty', 'zibby'
             ],
             curses: [
