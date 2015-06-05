@@ -985,6 +985,7 @@
             if (!basicBot.settings.filterChat) return false;
             if (basicBot.userUtilities.getPermission(chat.uid) > 0) return false;
             var msg = chat.message;
+            var msg_raw = chat.message;
             var containsLetters = false;
             for (var i = 0; i < msg.length; i++) {
                 ch = msg.charAt(i);
@@ -1012,7 +1013,7 @@
             }
             for (var j = 0; j < basicBot.chatUtilities.spam.length; j++) {
           //      if (msg === basicBot.chatUtilities.spam[j]) {
-                  var spos = msg.search(basicBot.chatUtilities.spam[j]);
+                  var spos = msg_raw.search(basicBot.chatUtilities.spam[j]);
                   if (spos != -1) {
                     API.sendChat(subChat("\/me @%%NAME%%, spamming or profanity is not allowed here.", {name: chat.un}));
                     return true;
