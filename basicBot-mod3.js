@@ -1764,6 +1764,7 @@
                     'gives you a leek. This is the Vocaloid Hangout, after all. XD',
                     'gives you a fortune cookie. It reads "Why aren\'t you working on any projects?"',
                     'gives you a fortune cookie. It reads "Make more covers using LEON!"',
+                    'gives you a horrible tasting macaroon that sticks to your shoes, straight from the RUBY reveal fail at AX2015 (remember?)',
                     'gives you a fortune cookie. It reads "Give that special someone a compliment"',
                     'gives you a fortune cookie. It reads "Take a risk!"',
                     'gives you a fortune cookie. It reads "Go outside."',
@@ -2844,7 +2845,7 @@
 
             skipCommand: {
                 command: 'skip',
-                rank: 'bouncer',
+                rank: 'residentdj',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
