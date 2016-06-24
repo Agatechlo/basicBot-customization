@@ -2851,7 +2851,7 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.sendChat(subChat(basicBot.chat.skip, {name: chat.un}));
+                        API.sendChat(subChat(basicBot.chat.forceskip, {name: chat.un}));
                         API.moderateForceSkip();
                         basicBot.room.skippable = false;
                         setTimeout(function () {
