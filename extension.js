@@ -96,7 +96,7 @@
         opLink: null,
         rulesLink: "https://goo.gl/FYSWsE",
         themeLink: null,
-        fbLink: "https://www.facebook.com/vocaloidfanpage",
+        fbLink: null,
         youtubeLink: null,
         website: null,
         intervalMessages: [],
