@@ -48,8 +48,8 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
       botName: "VocaloidHangoutBot",
       language: "english",
-      chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
-      scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
+      chatLink: "https://rawgit.com/Agatechlo/basicBot-customization/master/lang/en.json",
+      scriptLink: "https://rawgit.com/Agatechlo/basicBot-customization/master/basicBot-new.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
       startupVolume: 0, // 0-100
