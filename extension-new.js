@@ -19,7 +19,7 @@
         //Extend the bot here, either by calling another function or here directly.
 
         // You can add more spam words to the bot.
-        var spamWords = ['spam1', 'fuck', 'fuk', 'fuq', 'dafuq', 'dufuq', 'fucking', 'fuckin', 'fuckin\'', 'fucked', 'feck', 'fick', 'fahk', 'fak', 'shit', 'shet', 'shitty', 'zibby', 'nigger', 'faggot', 'nigga', 'niqqa'];
+        var spamWords = ['spam1', 'fuck', 'fuk', 'fuq', 'dafuq', 'dufuq', 'fucking', 'fuckin', 'fuckin\'', 'fucked', 'fuckfuck', 'fuckfuckfuck', 'fuckfuckfuckfuck', 'feck', 'fick', 'fahk', 'fak', 'shit', 'shitpost', 'shitface', 'shet', 'shitty', 'zibby', 'nigger', 'faggot', 'nigga', 'niqqa'];
         for (var i = 0; i < spamWords.length; i++) {
           window.bot.chatUtilities.spam.push(spamWords[i]);
         }
