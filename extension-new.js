@@ -112,6 +112,7 @@
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Agatechlo/basicBot-customization/master/basicBot-new.js", extend);
+//    $.getScript("https://rawgit.com/Agatechlo/basicBot-customization/master/basicBot-new.js", extend);
+    $.getScript("https://rawgit.com/basicBot/source/master/basicBot.js", extend);
 
 }).call(this);
